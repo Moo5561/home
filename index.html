@@ -1,12 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title</title>
+    <title>Moo5561 | Personal Site</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <h1>hello neighbor</h1>
-    <p>idk bro.</p>
+<body class="bg-[#0b0f19] text-slate-300 font-sans selection:bg-emerald-500/20 selection:text-emerald-400">
+
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-50 bg-[#0b0f19]/90 backdrop-blur-md border-b border-slate-900">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-mono font-bold text-white hover:text-emerald-400 transition-colors text-lg">
+                Moo5561
+            </a>
+
+            <!-- Social Links -->
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="https://github.com/moo5561" target="_blank" class="hover:text-white transition-colors" title="GitHub">
+                    <i class="fa-brands fa-github text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / About Section -->
+    <section id="about" class="py-16 md:py-24">
+        <div class="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            
+            <!-- Left Bio Area -->
+            <div class="md:col-span-2 space-y-6">
+                <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full text-xs font-semibold">
+                    <i class="fa-solid fa-code text-[10px]"></i> Software Tinkerer
+                </div>
+                
+                <h1 class="text-4xl font-extrabold tracking-tight text-white">
+                    Hey, I'm <span class="text-emerald-400">Moo</span>.
+                </h1>
+                
+                <p class="text-slate-400 leading-relaxed text-base sm:text-lg">
+                    Also known as <strong class="text-slate-200 font-medium">Moo5561</strong> online. I'm a technology enthusiast who likes writing software scripts, trying out code, and messing around with tech to see how things work. 
+                </p>
+                
+                <p class="text-slate-450 leading-relaxed text-sm sm:text-base">
+                    I enjoy setting up virtual machines to safely experiment with different operating systems, environments, and software platforms without cluttering my main computer.
+                </p>
+            </div>
+
+            <!-- Right Profile Card -->
+            <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 space-y-4">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">Profiles</h3>
+                <div class="space-y-3 text-sm">
+                    <div class="flex items-center justify-between">
+                        <span class="text-slate-400"><i class="fa-brands fa-github mr-2 text-slate-500"></i>GitHub</span>
+                        <a href="https://github.com/moo5561" target="_blank" class="text-emerald-400 hover:underline font-mono">Moo5561</a>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-slate-400"><i class="fa-brands fa-discord mr-2 text-slate-500"></i>Discord</span>
+                        <span class="text-slate-200 font-mono select-all">killingsworth.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Setup / Environment Section -->
+    <section id="setup" class="py-12 border-t border-slate-900 bg-slate-900/10">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl font-bold text-white mb-6">How I Mess Around With Tech</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Workstation -->
+                <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-5">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-desktop text-sm"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-sm mb-1">Workstation & Coding</h3>
+                    <p class="text-slate-450 text-xs leading-relaxed">
+                        I use a standard Windows desktop computer as my main workstation. It’s where I write software, write scripts, edit code files, and build projects.
+                    </p>
+                </div>
+
+                <!-- Virtualization -->
+                <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-5">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-layer-group text-sm"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-sm mb-1">Virtualization (VMs)</h3>
+                    <p class="text-slate-450 text-xs leading-relaxed">
+                        I don't really host my own VMs that much. Instead, I use VMsHARE to safely play around with, test, and experiment with virtual machines.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tinkering Section -->
+    <section id="tinkering" class="py-12 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl font-bold text-white mb-2">Projects & Tinkering</h2>
+            <p class="text-slate-400 text-xs mb-6">A clear look at the software environments and code projects I play around with.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+                <!-- Project: birdvirus-bot -->
+                <a href="https://github.com/moo5561/birdvirus-bot" target="_blank" class="group bg-slate-900/30 border border-slate-800/80 hover:border-emerald-500/30 rounded-xl p-5 transition-all duration-300 flex flex-col justify-between">
+                    <div class="mb-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-emerald-400 text-lg"><i class="fa-solid fa-robot"></i></span>
+                            <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full font-mono">GitHub Repo</span>
+                        </div>
+                        <h3 class="font-bold text-white text-sm mb-2 group-hover:text-emerald-400 transition-colors">birdvirus-bot</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            My fully-functional, custom Discord bot built for real-world server use. It features active commands, reliable utility functions, and interactive features designed for everyday server operations.
+                        </p>
+                    </div>
+                    <div class="mt-auto flex items-center gap-1 text-[11px] text-slate-500 group-hover:text-emerald-400 transition-colors font-mono">
+                        <span>View Repository</span>
+                        <i class="fa-solid fa-arrow-right text-[9px] transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </a>
+
+                <!-- Project: Democraft -->
+                <a href="https://moo5561.github.io/home/democraft" target="_blank" class="group bg-slate-900/30 border border-slate-800/80 hover:border-emerald-500/30 rounded-xl p-5 transition-all duration-300 flex flex-col justify-between">
+                    <div class="mb-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-emerald-400 text-lg"><i class="fa-solid fa-cubes"></i></span>
+                            <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full font-mono">Web Build</span>
+                        </div>
+                        <h3 class="font-bold text-white text-sm mb-2 group-hover:text-emerald-400 transition-colors">Democraft</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            A custom web-hosted Eaglercraft build. A lightweight, web-playable demo version of Minecraft running right inside your web browser.
+                        </p>
+                    </div>
+                    <div class="mt-auto flex items-center gap-1 text-[11px] text-slate-500 group-hover:text-emerald-400 transition-colors font-mono">
+                        <span>Launch Demo</span>
+                        <i class="fa-solid fa-arrow-right text-[9px] transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </a>
+
+                <!-- Project: VMsHARE -->
+                <a href="https://websim.com/@vmshare/vmshare-4" target="_blank" class="group bg-slate-900/30 border border-slate-800/80 hover:border-emerald-500/30 rounded-xl p-5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-emerald-400 text-lg"><i class="fa-solid fa-share-nodes"></i></span>
+                            <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full font-mono">WebSim Link</span>
+                        </div>
+                        <h3 class="font-bold text-white text-sm mb-2 group-hover:text-emerald-400 transition-colors">VMsHARE</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            An awesome tool hosted on WebSim that I use to access, share, and experiment with virtual machines and system configurations directly in the browser.
+                        </p>
+                    </div>
+                    <div class="mt-4 flex items-center gap-1 text-[11px] text-slate-500 group-hover:text-emerald-400 transition-colors font-mono">
+                        <span>Open VMsHARE</span>
+                        <i class="fa-solid fa-arrow-right text-[9px] transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-500 font-mono">
+        <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div>
+                © 2026 Moo5561.
+            </div>
+            <div class="flex gap-4 items-center">
+                <a href="https://github.com/moo5561" target="_blank" class="hover:text-emerald-400 transition-colors" title="GitHub"><i class="fa-brands fa-github text-sm"></i></a>
+                <span>|</span>
+                <span>Discord: <strong class="text-slate-300 select-all">killingsworth.</strong></span>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
